@@ -53,23 +53,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=BAS_DevKITV3_Outjob.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document2]
 DocumentPath=schematic\001_OverViewDevKIT.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -84,9 +67,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JDKWYLVU
 
-[Document3]
+[Document2]
 DocumentPath=schematic\101_Power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -101,9 +84,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WEPDFDXU
 
-[Document4]
+[Document3]
 DocumentPath=schematic\101_Power.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -120,7 +103,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document4]
 DocumentPath=schematic\201_USB3Hub.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -135,9 +118,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NPGCTWAK
 
-[Document6]
+[Document5]
 DocumentPath=schematic\201_USB3Hub.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -154,7 +137,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=schematic\301_FrameUSB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -169,9 +152,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HQGKJTMS
 
-[Document8]
+[Document7]
 DocumentPath=schematic\301_FrameUSB.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -188,7 +171,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=schematic\401_RPi0.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -203,9 +186,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=XXTSWDYX
 
-[Document10]
+[Document9]
 DocumentPath=schematic\401_RPi0.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -222,7 +205,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=schematic\501_RPiCM4.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -237,9 +220,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=FDQMDPBX
 
-[Document12]
+[Document11]
 DocumentPath=schematic\501_RPiCM4.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -256,7 +239,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=schematic\601_PCIe-USB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -271,9 +254,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=CSCWMCYA
 
-[Document14]
+[Document13]
 DocumentPath=schematic\601_PCIe-USB.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -290,7 +273,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=schematic\701_PCIe-USBports.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -305,9 +288,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=ZEHPZYJE
 
-[Document16]
+[Document15]
 DocumentPath=schematic\701_PCIe-USBports.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -324,7 +307,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=pcb\DevKITV3.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -340,6 +323,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HHBVDHRM
+
+[Document17]
+DocumentPath=Job1.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [ProjectVariant1]
 UniqueID=3A86BABE-C380-4774-8C88-420DE42BCBAB
@@ -378,12 +378,16 @@ Variation28=Designator=R520|UniqueId=\KLGADFQR\RFUJBZPP|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [Parameter1]
+Name=Rev
+Value=3.0
+
+[Parameter2]
 Name=DocNumber
 Value=P234
 
-[Parameter2]
-Name=Rev
-Value=2.7
+[Parameter3]
+Name=
+Value=
 
 [Configuration1]
 Name=Sources
@@ -970,6 +974,36 @@ OutputName12=Web Review Data
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
+OutputType13=Ansoft Neutral
+OutputName13=Ansoft Neutral (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=HyperLynx
+OutputName14=HyperLynx (AutoPCB)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=Orcad v7 Capture Design
+OutputName15=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=P-CAD ASCII
+OutputName16=P-CAD ASCII (AutoPCB)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=P-CAD V16 Schematic Design
+OutputName17=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
+OutputType18=SiSoft
+OutputName18=SiSoft (AutoPCB)
+OutputDocumentPath18=
+OutputVariantName18=
+OutputDefault18=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
