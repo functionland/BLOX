@@ -1,19 +1,19 @@
 # Functionland DevKit
 
-We're updating the documentation with first version dropping in a few days! This page will update...
+We're updating the documentation with the first version dropping in a few days! This page will update...
 
 As the first step, install a Raspberry Pi CM4 on your board. Track shops that have them in stock here:
 
 https://rpilocator.com/
 
 ## overview
-The DevKit board is a general purpose evaluation board for rapid-prototyping base on the Raspberry Pi Compute Module 4 (RPi CM4) and Raspberry Pi Zero 2 W (RPi Zero). High performance Compute module, Variety of USBs ports provides a flexible prototyping platform.
+The DevKit board is a general-purpose evaluation board for rapid prototyping based on the Raspberry Pi Compute Module 4 (RPi CM4) and Raspberry Pi Zero 2 W (RPi Zero). A High-performance Compute module and a Variety of USBs ports provide a flexible prototyping platform.
 
 
 ## Board Component Location
-Figure below shows the Devkit board component locations. Each numbered component is shown in the table.
+The figure below shows the Devkit board component locations. Each numbered component is shown in the table.
 
-![Devkit_components_location](https://user-images.githubusercontent.com/3342690/211040885-91474fdf-057b-454a-a358-90412d65ff50.jpg)
+![Devkit_components_location](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/Devkit_components_location.jpg)
 
 
 
@@ -48,11 +48,26 @@ Figure below shows the Devkit board component locations. Each numbered component
 | 27 | 2.54 mm pin header      | Connected to RPi CM4 UART TTL (GPIO14, 15)       | 
 | 28 | 2.54 mm jumpers         | For enabling or disabling CM4 Features           |
 | 29 | Slide Switch            | For CM4 Powering ON and OFF                      |
-| 30 | LED3                    | For CM4 Status                                   |
-| 27 | 2.54 mm pin header      | Connected to RPi Zero UART TTL (GPIO14, 15)      |
+| 30 | LEDs                    | For CM4 Status                                   |
+| 31 | 2.54 mm pin header      | Connected to RPi Zero UART TTL (GPIO14, 15)      |
 | 32 | 2.54 mm pin header      | For enabling smart HUB manually or with RPI Zero |
+| 33 | Push button             | For Reset Smart HUB IC                           |
+| 34 | 2.54 mm pin header      | For selecting Smart HUB Boot Mode                |
+
+# Quick Start Guid
+## Power Adapter
+For minimum function, you need a USB PD Adapter with 20V 10W at least. we suggest using USB Adapter with 30W power for proper functionality.
+These are some USB Adapters that we suggested.
+
+- [Anker 711 Charger (Nano II 30W)](https://www.anker.com/products/a2665)
+- [Belkin 30W USB-C GaN Wall Charger](https://www.belkin.com/30w-usb-c-gan-wall-charger-usb-c-cable/P-WCH001dq1MWH-B6.html)
+- [Ugreen Nexode Mini 45W Dual USB C Charger](https://eu.ugreen.com/collections/gan-chargers/products/ugreen-nexode-mini-45w-dual-usb-c-charger)
+
+
+>Note: For power input USB PD sink IC STUSB4500 is used. the default configuration of this IC sets for 20V, but we can change the USB PD IC parameter and change it for other Voltage for example 9V or 12V. For more information, about the STUSB4500 setting see [Devkit USB PD STUSB4500](https://github.com/functionland/BLOX/blob/main/Electrical/DevKit/documents/documents_md/USB_PD_STUSB4500.md)
+
 
 # Next steps
 **Devkit Architecture**
 
-for more information about block diagram and architecture see ["Devkit Architecture"](https://link-url-here.org)
+For more information about block diagrams and architecture see [Devkit Architecture](https://github.com/functionland/BLOX/blob/main/Electrical/DevKit/documents/documents_md/Architecture.md)
