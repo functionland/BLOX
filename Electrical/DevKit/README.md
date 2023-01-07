@@ -76,10 +76,31 @@ For example, this Part Number "CM4108032" has Wireless, 4GB RAM and 32GB eMMC or
 ## RPi Zero module
 In DevKit [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/) is optional and you can use it for example for standalone programming and flashing STUSB4500 USB PD IC or USB7252C Smart HUB IC.
 
-## Flash Raspberry Pi OS to CM4 
+## Flash Raspberry Pi OS to Micro SD Card 
+For CM4 versions without eMMC, you need a Micro SD card and a card reader. For Flashing RPi OS download Raspberry Pi Imager tools and follow the instructions on youtube [How to use Raspberry Pi Imager](https://www.youtube.com/watch?v=ntaXWS8Lk34). For more information see [Raspberry Pi Operating system images](https://www.raspberrypi.com/software/operating-systems/). For RPi Zero the procedure is the same as CM4.
 
+## Flash Raspberry Pi OS to CM4 eMMC
+For the CM4 version with eMMC, you must mount CM4 eMMC on the PC after that program RPi OS with RPI Imager. First, install The usbboot utility installer from the Raspberry Pi Foundations GitHub Repository from [Official Raspberry Pi “usbboot” GitHub Repository]()
 
-https://www.raspberrypi.com/software/
+put a jumper on NRPI_BOOT ( [Number 28](#Board-Component-Location) )
+![Devkit_CM4_boot_jumper](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/CM4_boot_jumper.jpg)\
+\
+after that connect USB Type-C near the CM4 module to the PC ( [Number 26](#Board-Component-Location) )
+![Devkit_CM4_boot_jumper](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/CM4_USB_type-c.jpg)\
+\
+and make sure the slide switch is in ENABLE position( [Number 29](#Board-Component-Location) ) and then connect a power adapter to the DevKit. if everything is OK you can see "BCM2711 Boot" in Device Manager.
+
+![CM4_boot_device_manager](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/CM4_boot_device_manager.png)\
+\
+Now open the "rpiboot" software from the start menu folder by right-clicking and choosing "Run as administrator". if everything is OK The window will disappear at this point and Windows will see the CM4 onboard eMMC as a new mass storage device. Now open the Raspberry Pi Imager utility from the start menu. The CM4 will show up as a drive available to be imaged like this.
+
+![RPi_imager](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/RPi_imager.png)\
+\
+For more information see these links
+- [ Jeff Geerling Tutorial ](https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot)
+- [ Waveshare Tutorial ](https://www.waveshare.com/wiki/Write_Image_for_Compute_Module_Boards_eMMC_version)
+- [ James A. Chambers Tutorial ](https://jamesachambers.com/full-compute-module-4-raspberry-pi-setup-imaging-guide/)
+
 
 # Next steps
 **Devkit Architecture**
