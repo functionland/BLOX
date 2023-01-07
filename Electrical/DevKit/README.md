@@ -71,7 +71,7 @@ CM4 module is the heart of DevKit.The [Raspberry Compute Module 4](https://www.r
 
 ![Devkit_components_location](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/CM4_models.png)
 
-For example, this Part Number "CM4108032" has Wireless, 4GB RAM and 32GB eMMC or this Part Number "CM4108000" has Wireless, 8GB RAM and no eMMC.
+>**Note:** For example, this Part Number "CM4108032" has Wireless, 4GB RAM and 32GB eMMC or this Part Number "CM4108000" has Wireless, 8GB RAM and no eMMC.
 
 ## RPi Zero module
 In DevKit [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/) is optional and you can use it for example for standalone programming and flashing STUSB4500 USB PD IC or USB7252C Smart HUB IC.
