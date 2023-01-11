@@ -103,6 +103,12 @@ For more information see these links
 
 
 # Next steps
+
+**Flashing VL805 SPI FLASH**
+
+Devkit uses a VL805 PCIe USB3 controller for adding 3 USB3 type A plus USB HUB to CM4. For getting VL805 to work first its SPI Flash must be programmed. for more information see [Flashing VL805 SPI Flash](https://github.com/functionland/BLOX/blob/main/Electrical/DevKit/documents/documents_md/Flashing_VL805_SPI_Flash.md)\
+\
+\
 **Devkit Architecture**
 
 For more information about block diagrams and architecture see [Devkit Architecture](https://github.com/functionland/BLOX/blob/main/Electrical/DevKit/documents/documents_md/Architecture.md)
