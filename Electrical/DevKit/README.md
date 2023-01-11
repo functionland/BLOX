@@ -80,7 +80,7 @@ In DevKit [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-
 For CM4 versions without eMMC, you need a Micro SD card and a card reader. For Flashing RPi OS download Raspberry Pi Imager tools and follow the instructions on youtube [How to use Raspberry Pi Imager](https://www.youtube.com/watch?v=ntaXWS8Lk34). For more information see [Raspberry Pi Operating system images](https://www.raspberrypi.com/software/operating-systems/). For RPi Zero the procedure is the same as CM4.
 
 ## Flash Raspberry Pi OS to CM4 eMMC
-For the CM4 version with eMMC, you must mount CM4 eMMC on the PC after that program RPi OS with RPI Imager. First, install The usbboot utility installer from the Raspberry Pi Foundations GitHub Repository from [Official Raspberry Pi “usbboot” GitHub Repository]()
+For the CM4 version with eMMC, you must mount CM4 eMMC on the PC after that program RPi OS with RPI Imager. First, install The usbboot utility installer from the Raspberry Pi Foundations GitHub Repository from [Official Raspberry Pi “usbboot” GitHub Repository](https://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe)
 
 put a jumper on NRPI_BOOT ( [Number 28](#Board-Component-Location) )
 ![Devkit_CM4_boot_jumper](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/CM4_boot_jumper.jpg)\
