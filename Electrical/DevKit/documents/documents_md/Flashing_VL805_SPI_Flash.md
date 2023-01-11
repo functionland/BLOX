@@ -21,9 +21,9 @@ Connect these pins of RPi Zero to SPI Flash Connector with some jumper wire.
 | 17        | 3.3v     | +3V3,WP,HLD   |
 
 
-Power On RPi Zero with USB micro connector with PWR IN label.
+Power On RPi Zero with USB micro connector with PWR IN label. and connect to RPi Zero consol and run below commands.
 
-enable SPI with raspi-config cmd
+enable SPI with raspi-config command.
 
 ```bash
 sudo raspi-config
@@ -51,7 +51,7 @@ flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=1000 -w vl805-000138a1_AT25SF3
 
 if eveythig goes OK these message shown.
 
-```bash
+```
 pi@zero:~/flashrom $ flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=1000 -w new
 flashrom v1.2 on Linux 5.15.61-v7+ (armv7l)
 flashrom is free software, get the source code at https://flashrom.org
@@ -73,7 +73,7 @@ Warning: Chip content is identical to the requested image.
 Erase/write done.
 ```
 
-now you can remove jumperwires and power on Devkit
+now you can remove jumper wires and power on Devkit
 
 you can test VL805 with this command.
 
