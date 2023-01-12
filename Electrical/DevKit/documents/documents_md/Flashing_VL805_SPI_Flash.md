@@ -8,7 +8,7 @@ In this document, we explain 2 solutions.
 
 ## Flashing with RPi Zero
 we can use RPi Zero as a SPI programmer and Flash VL805 Firmware to SPI Flash Connected to it.
-First Turn off Devkit and remove RPi Zero from Devkit connector, becurse we must power the RPi zero separately. There is a connector for flashing VL805 SPI Flash on the back of the Devkit board. see the below picture.
+First Turn off Devkit and remove RPi Zero from Devkit connector, because we must power the RPi zero separately. There is a connector for flashing VL805 SPI Flash on the back of the Devkit board. see the below picture.
 
 ![VL805 SPI FLASH Connector](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/VL805_SPI_FLASH_Connector.png)\
 \
@@ -97,10 +97,10 @@ https://www.flashrom.org/RaspberryPi
 
 
 ## Flashing with an external programmer
-There is another solution for programming external flash, If you don't have RPI Zero. In this topic we want to use [UsbAsp-flash](https://github.com/nofeletru/UsbAsp-flash) software for programming SPI Fash. this software uses some programming hardware, and you must have or buy this hardware.
-for our test, we used **CH341a** programmer. you can buy this programmer from [Amazon](https://www.amazon.ca/Programmer-Flasher-Programmable-Circuits-Suitable/dp/B08GCW7WNC/ref=sr_1_1?keywords=ch341a&qid=1673543307&sr=8-1).
+There is another solution for programming external flash, If you don't have RPI Zero. In this topic we want to use [UsbAsp-flash](https://github.com/nofeletru/UsbAsp-flash) software for programming SPI Flash. this software uses some hardware, and you must have or buy them.
+for our test, we used **CH341a programmer**. you can buy this programmer from [Amazon](https://www.amazon.ca/Programmer-Flasher-Programmable-Circuits-Suitable/dp/B08GCW7WNC/ref=sr_1_1?keywords=ch341a&qid=1673543307&sr=8-1).
 
-connect Programmer yellow pin header to VL805 SPI Flash connector like the previous section.  
+connect Programmer yellow pin header to VL805 SPI Flash connector like the previous section. the pin-out are on the back of programmer like below picture.
 ![CH341a programmer](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/CH341a_programmer.png)
 
 download VL805 firmware form [this link](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/vl805-000138a1.bin)
@@ -109,7 +109,7 @@ open VL805 firmware in UsbAsp-flash software.
 
 make sure to select "CH341a" from "Hardware" menu. 
 
-select "AT25DF321" from "IC" -> "SPI" -> "ATMEL" menu and click "program"
+select "AT25DF321" from "IC" -> "SPI" -> "ATMEL" menu.
 
 and click "Program IC" icon.
 
@@ -117,4 +117,5 @@ and click "Program IC" icon.
 
 
 now you can remove jumper wires and power on Devkit.
+
 after this VL805 must be functional.
