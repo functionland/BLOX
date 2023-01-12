@@ -1,9 +1,14 @@
 # Flashing VL805 SPI FLASH
 Devkit uses a VL805 PCIe USB3 controller for adding 3 USB3 type A plus USB HUB to CM4. For getting VL805 to work first its SPI Flash must be programmed.
+In this document we explain 2 solutions.
 
-## Flashnig with RPi Zero
-we can use RPi Zero as a SPI programmer and Flash VL805 Firmware to SPI Flash Connected to VL805.
-First Turn off Devkit and remove RPi Zero form Devkit connector. There is a connector for flashing VL805 SPI Flash on back of the Devkit board. see below picture.
+- [Flashing with RPi Zero](#Flashing-with-RPi-Zero)
+- [Flashing with external programmer](#Flashing-with-external-programmer) 
+
+
+## Flashing with RPi Zero
+we can use RPi Zero as a SPI programmer and Flash VL805 Firmware to SPI Flash Connected to its.
+First Turn off Devkit and remove RPi Zero from Devkit connector, becuse we must power the RPi zero sepratly. There is a connector for flashing VL805 SPI Flash on back of the Devkit board. see below picture.
 
 ![VL805 SPI FLASH Connector](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/VL805_SPI_FLASH_Connector.png)\
 \
@@ -89,3 +94,9 @@ pi@cm4:~ $
 
 see this link for more information about how program SPI Flash with RPi Zero
 https://www.flashrom.org/RaspberryPi
+
+
+## Flashing with external programmer
+There is other solution for programing external flash, If you don't have RPI Zero. in this topic we want to use [UsbAsp-flash](https://github.com/nofeletru/UsbAsp-flash) software for programing SPI Fash. this software uses some hardware for programing and you must have or buy these hardware.
+for our test we used **CH341a** programmer. you can buy this programmer from [Amazon](https://www.amazon.ca/Programmer-Flasher-Programmable-Circuits-Suitable/dp/B08GCW7WNC/ref=sr_1_1?keywords=ch341a&qid=1673543307&sr=8-1).
+
