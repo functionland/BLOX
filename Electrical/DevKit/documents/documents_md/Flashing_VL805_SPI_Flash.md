@@ -1,14 +1,14 @@
 # Flashing VL805 SPI FLASH
 Devkit uses a VL805 PCIe USB3 controller for adding 3 USB3 type A plus USB HUB to CM4. For getting VL805 to work first its SPI Flash must be programmed.
-In this document we explain 2 solutions.
+In this document, we explain 2 solutions.
 
 - [Flashing with RPi Zero](#Flashing-with-RPi-Zero)
-- [Flashing with external programmer](#Flashing-with-external-programmer) 
+- [Flashing with an external programmer](#Flashing-with-an-external-programmer) 
 
 
 ## Flashing with RPi Zero
-we can use RPi Zero as a SPI programmer and Flash VL805 Firmware to SPI Flash Connected to its.
-First Turn off Devkit and remove RPi Zero from Devkit connector, becuse we must power the RPi zero sepratly. There is a connector for flashing VL805 SPI Flash on back of the Devkit board. see below picture.
+we can use RPi Zero as a SPI programmer and Flash VL805 Firmware to SPI Flash Connected to it.
+First Turn off Devkit and remove RPi Zero from Devkit connector, becurse we must power the RPi zero separately. There is a connector for flashing VL805 SPI Flash on the back of the Devkit board. see the below picture.
 
 ![VL805 SPI FLASH Connector](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/VL805_SPI_FLASH_Connector.png)\
 \
@@ -26,7 +26,7 @@ Connect these pins of RPi Zero to SPI Flash Connector with some jumper wire.
 | 17        | 3.3v     | +3V3,WP,HLD   |
 
 
-Power On RPi Zero with USB micro connector with PWR IN label. and connect to RPi Zero consol and run below commands.
+Power On RPi Zero with USB micro connector with PWR IN label. and connect to RPi Zero console and run the below commands.
 
 enable SPI with raspi-config command.
 
@@ -34,7 +34,7 @@ enable SPI with raspi-config command.
 sudo raspi-config
 ```
 
-and in "Interfaceing Options" menu select "SPI" and select "Yes" for enabling SPI. see this link for more information [Enable SPI Interface on the Raspberry Pi](https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/)
+and in "Interfacing Options" menu select "SPI" and select "Yes" for enabling SPI. see this link for more information [Enable SPI Interface on the Raspberry Pi](https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/)
 
 now install "flashrom" app with this command
 
@@ -92,11 +92,29 @@ pi@cm4:~ $
 
 
 
-see this link for more information about how program SPI Flash with RPi Zero
+see this link for more information about how to program SPI Flash with RPi Zero
 https://www.flashrom.org/RaspberryPi
 
 
-## Flashing with external programmer
-There is other solution for programing external flash, If you don't have RPI Zero. in this topic we want to use [UsbAsp-flash](https://github.com/nofeletru/UsbAsp-flash) software for programing SPI Fash. this software uses some hardware for programing and you must have or buy these hardware.
-for our test we used **CH341a** programmer. you can buy this programmer from [Amazon](https://www.amazon.ca/Programmer-Flasher-Programmable-Circuits-Suitable/dp/B08GCW7WNC/ref=sr_1_1?keywords=ch341a&qid=1673543307&sr=8-1).
+## Flashing with an external programmer
+There is another solution for programming external flash, If you don't have RPI Zero. In this topic we want to use [UsbAsp-flash](https://github.com/nofeletru/UsbAsp-flash) software for programming SPI Fash. this software uses some programming hardware, and you must have or buy this hardware.
+for our test, we used **CH341a** programmer. you can buy this programmer from [Amazon](https://www.amazon.ca/Programmer-Flasher-Programmable-Circuits-Suitable/dp/B08GCW7WNC/ref=sr_1_1?keywords=ch341a&qid=1673543307&sr=8-1).
 
+connect Programmer yellow pin header to VL805 SPI Flash connector like the previous section.  
+![CH341a programmer](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/CH341a_programmer.png)
+
+download VL805 firmware form [this link](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/vl805-000138a1.bin)
+
+open VL805 firmware in UsbAsp-flash software. 
+
+make sure to select "CH341a" from "Hardware" menu. 
+
+select "AT25DF321" from "IC" -> "SPI" -> "ATMEL" menu and click "program"
+
+and click "Program IC" icon.
+
+![CH341a programmer](https://github.com/functionland/BLOX/raw/main/Electrical/DevKit/documents/images/UsbAsp-flash.png)
+
+
+now you can remove jumper wires and power on Devkit.
+after this VL805 must be functional.
