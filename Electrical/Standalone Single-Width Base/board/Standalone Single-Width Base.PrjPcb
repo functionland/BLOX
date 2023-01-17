@@ -82,17 +82,34 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MLKFYWVA
 
+[Document3]
+DocumentPath=Job.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [Parameter1]
-Name=Rev
-Value=1.0
+Name=DocNumber
+Value=P234
 
 [Parameter2]
 Name=PrName
 Value=CM4 Tower Stand
 
 [Parameter3]
-Name=DocNumber
-Value=P234
+Name=Rev
+Value=1.0
 
 [Configuration1]
 Name=Sources
