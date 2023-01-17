@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=001_top.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=001_top.SchDoc|Designator=Grid Position 3/8|SchDesignator=Grid Position 3/8|FileName=301_GridPos3.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=301_GridPos3.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=001_top.SchDoc|Designator=Grid Position 4/8|SchDesignator=Grid Position 4/8|FileName=401_GridPos4.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=401_GridPos4.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=001_top.SchDoc|Designator=Grid Position 5/8|SchDesignator=Grid Position 5/8|FileName=501_GridPos5.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=501_GridPos5.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
